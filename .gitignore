@@ -1,0 +1,29 @@
+# Marine Environmental DNA (eDNA) Classifier & Fish Species Detector ????
+
+A machine learning pipeline for classifying marine environmental DNA (eDNA) sequences, correlating genetic markers with fish biodiversity samples, and predicting species occurrence.
+
+## ?? Overview
+
+- **classify.py**: Machine learning classification using RandomForestRegressor, K-Fold cross validation, and grid-search parameter tuning on marine biological markers.
+- **ish.py / ishy.py**: Multi-class fish species classification trained on anatomical and morphometric datasets (Fish.csv).
+- **detector.py**: Computer vision QR-code sample identifier for field specimen tagging and tracking.
+- **Datasets**: Sample eDNA sequence data (eDNA.csv) and specimen metrics (Fish.csv).
+
+## ?? Setup & Execution
+
+\\\ash
+pip install pandas scikit-learn numpy opencv-python qreader
+python classify.py
+python fish.py
+\\\
+"@ | Set-Content -Path PycharmProjects\ocean_edna\README.md -Encoding utf8
+
+@"
+__pycache__/
+*.py[cod]
+*.class
+.venv/
+venv/
+.idea/
+.vscode/
+*.log
